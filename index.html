@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Matematik Segitiga</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#luas">Hitung Luas</a></li>
+                <li><a href="#keliling">Hitung Keliling</a></li>
+            </ul>
+        </nav>
+        <section id="luas">
+            <h2>Hitung Luas Segitiga</h2>
+            <div id="gambar">
+                <svg width="100" height="100">
+                    <polygon points="50,10 10,90 90,90" fill="white" stroke="black" stroke-width="1" />
+                    <line x1="50" y1="10" x2="50" y2="90" stroke="black" stroke-width="1" />
+                    <text x="43" y="70" font-family="Arial" font-size="12" fill="black">t</text>
+                    <text x="46" y="10" font-family="Arial" font-size="12" fill="black">A</text>
+                    <text x="5" y="100" font-family="Arial" font-size="12" fill="black">B</text>
+                    <text x="87" y="100" font-family="Arial" font-size="12" fill="black">C</text>
+                </svg>
+            </div>
+            <div id="luas-rumus">
+                <h3>Rumus Luas Segitiga:</h3>
+                <p style="text-align: center;">Luas = 1/2 x Alas x Tinggi</p>
+            </div>
+            <form id="luas-form">
+                <label for="alas">Alas:</label>
+                <input type="number" id="alas" required>
+                <label for="tinggi">Tinggi:</label>
+                <input type="number" id="tinggi" required>
+                <button type="submit" id="luas-submit">Hitung Luas</button>
+                <button type="button" id="luas-clear">Clear</button>
+            </form>
+            <p id="luas-result"></p>
+        </section>
+        <section id="keliling">
+            <h2>Hitung Keliling Segitiga</h2>
+            <div id="gambar">
+                <svg width="100" height="100">
+                    <polygon points="50,10 10,90 90,90" fill="white" stroke="black" stroke-width="1" />
+                    <text x="46" y="10" font-family="Arial" font-size="12" fill="black">A</text>
+                    <text x="5" y="100" font-family="Arial" font-size="12" fill="black">B</text>
+                    <text x="87" y="100" font-family="Arial" font-size="12" fill="black">C</text>
+                </svg>
+            </div>
+            <div id="Keliling-rumus">
+                <h3>Rumus Keliling Segitiga:</h3>
+                <p style="text-align: center;">Keliling = AC + CB + BA</p>
+
+            </div>
+            <form id="keliling-form" >
+                <label for="sisi1">Sisi AC:</label>
+                <input type="number" id="sisi1" required>
+                <label for="sisi2">Sisi CB:</label>
+                <input type="number" id="sisi2" required>
+                <label for="sisi3">Sisi BA:</label>
+                <input type="number" id="sisi3" required>
+                <button type="submit" id="keliling-submit">Hitung Keliling</button>
+                <button type="button" id="keliling-clear">Clear</button>
+            </form>
+            <p id="keliling-result"></p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
